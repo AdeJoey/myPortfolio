@@ -1,0 +1,625 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Webseed - Portfolio</title>
+    <meta name="description" content="Joseph's Web Developer Portfolio">
+    <meta name="keywords" content="Web Developer, Portfolio, Projects, Contact">
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+    </head>
+    <body>
+        <!-- Loading Page -->
+        <div id="loading-page" style="position:fixed;top:0;left:0;width:100vw;height:100vh;background:#181818;z-index:9999;display:flex;flex-direction:column;justify-content:center;align-items:center;transition:opacity 0.5s;">
+            <img src="android-chrome-512x512.png" alt="Loading Logo" width="80" height="80" style="margin-bottom:24px;">
+            <h2 style="color:#fff;font-family:'Montserrat',sans-serif;letter-spacing:2px;">Loading Webwise...</h2>
+            <div style="margin-top:24px;width:60px;height:6px;background:#333;border-radius:3px;overflow:hidden;">
+                <div id="loading-bar" style="width:0;height:100%;background:#00b894;transition:width 1s;"></div>
+            </div>
+        </div>
+        <!-- Fullscreen Navigation Overlay -->
+        <div id="nav-overlay" style="position:fixed;top:0;left:0;width:100vw;height:100vh;background:rgba(24,24,24,0.98);z-index:9998;display:none;flex-direction:column;justify-content:center;align-items:center;transition:opacity 0.4s;">
+            <button id="close-nav" aria-label="Close navigation" style="position:absolute;top:32px;right:40px;background:none;border:none;font-size:2.5rem;color:#00c6ff;cursor:pointer;">
+                &times;
+            </button>
+            <ul style="list-style:none;padding:0;margin:0;text-align:center;">
+                <li style="margin:24px 0;"><a href="index.html" style="color:#00c6ff;font-size:2rem;text-decoration:none;font-family:'Montserrat',sans-serif;">Home</a></li>
+                <li style="margin:24px 0;"><a href="#about" style="color:#00c6ff;font-size:2rem;text-decoration:none;font-family:'Montserrat',sans-serif;">About</a></li>
+                <li style="margin:24px 0;"><a href="#projects" style="color:#00c6ff;font-size:2rem;text-decoration:none;font-family:'Montserrat',sans-serif;">Projects</a></li>
+                <li style="margin:24px 0;"><a href="#contact" style="color:#00c6ff;font-size:2rem;text-decoration:none;font-family:'Montserrat',sans-serif;">Contact</a></li>
+            </ul>
+        </div>
+        
+        <nav class="navbar">
+            <div class="logo">
+                <img src="android-chrome-512x512.png" alt="logo" width="50px" height="50px">
+                <h3>WEBSEED</h3>
+            </div>
+            <input type="checkbox" id="menu-toggle" class="menu-toggle">
+            <label for="menu-toggle" class="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </label>
+            <ul class="nav-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+        <header class="hero">
+            <div class="hero-content">
+                <div class="me">
+                    <div class="welcome">
+                        
+                        <h1>Hi, I'm Joseph</h1>
+                        <p>Web Developer | Building Modern, Responsive Websites</p>
+                    </div>
+                    <div class="snip-services">
+                        <div class="service">
+                            <h2>Web Development</h2>
+                            <p>Creating responsive and modern websites.</p>
+                            <a href="#projects" class="down-arrow-btn" aria-label="Scroll to About section">
+                        &#8595;
+                    </a>
+                        </div>
+                        <div class="service">
+                            <h2>Graphic Design</h2>
+                            <p>Designing user-friendly interfaces.</p>
+                            <a href="#projects" class="down-arrow-btn" aria-label="Scroll to About section">
+                        &#8595;
+                    </a>
+                        </div>
+                        <div class="service">
+                            <h2>SEO Optimization</h2>
+                            <p>Improving website visibility on search engines.</p>
+                            <a href="#projects" class="down-arrow-btn" aria-label="Scroll to About section">
+                        &#8595;
+                    </a>
+                        </div>
+                    </div>
+                </div>
+                </div>
+                <div class="me2">
+                    <div class="about-me">
+                        <h3>ABOUT ME</h3>
+                    <p>
+                        I'm a passionate web developer specializing in creating beautiful and functional websites using the latest technologies.
+                    </p>
+                    <a href="#about" class="down-arrow-btn" aria-label="Scroll to About section">
+                        &#8595;
+                    </a>
+                    </div>
+                    <div class="about-me">
+                        <h3>MY WORK</h3>
+                    <p>
+                        My work is driven by a passion for technology and a commitment to excellence. 
+                    </p>
+                    <a href="#services" class="down-arrow-btn" aria-label="Scroll to About section">
+                        &#8595;
+                    </a>
+                    </div>
+                </div>
+                <div class="image">
+                        <img class="propic"src="pptest.jpg" alt="">
+                    </div>
+            </div>
+        </header>
+        <main>
+            <section id="about">
+                <h2>ABOUT ME</h2>
+                <div class="about">
+                <div class="A1">
+                    <h1>I've been developing websites since 2020.</h1>
+                <p>
+                    I'm a passionate web developer specializing in creating beautiful and functional websites using the latest technologies.
+                </p>
+                </div>
+                <div class="A1">
+                    <div class="a1mask">
+                    <div class="A11">
+                     <h1>+5</h1>
+                     <h2>Years of Experience</h2>
+                </div>
+                <div class="A11">
+                     <h1>+50 </h1>
+                     <h2>Projects</h2>
+                </div>
+                </div>
+                <p>
+                    My experience includes working with various programming languages and frameworks, including HTML, CSS, JavaScript, and React. I am also skilled in graphic design and SEO optimization, ensuring that my websites are not only visually appealing but also optimized for search engines.
+                </p>
+                </div>
+                
+                </div>
+                <hr> 
+                <div class="previous-jobs">
+                    <h1>Collaborations</h1>
+                    <div class="brands-container">
+                        <div class="brands">
+                            <img src="kollem-high-resolution-logo-transparent.png" alt="Brand 1">
+                            <img src="favicon.ico" alt="Brand 2">
+                            <img src="kollem-high-resolution-logo-transparent.png" alt="Brand 3">
+                            <img src="favicon.ico" alt="Brand 4">
+                            <img src="kollem-high-resolution-logo-transparent.png" alt="Brand 1">
+                            <img src="favicon.ico" alt="Brand 2">
+                            <img src="kollem-high-resolution-logo-transparent.png" alt="Brand 3">
+                            <img src="favicon.ico" alt="Brand 4">
+                        </div>
+                    </div>
+                </div>
+                <style>
+                    .brands-container {
+                        width: 100%;
+                        overflow: hidden;
+                        padding: 20px 0;
+                        display: flex;
+                        justify-content: center;
+                        align-items: center;
+                    }
+                    .brands {
+                        display: flex;
+                        animation: scroll 20s linear infinite;
+                        gap: 50px;
+                    }
+                    .brands img {
+                        height: 40px;
+                        object-fit: contain;
+                    }
+                    @keyframes scroll {
+                        0% {
+                            transform: translateX(0);
+                        }
+                        100% {
+                            transform: translateX(-100%);
+                        }
+                    }
+                </style>
+            </section>
+            <section id="projects">
+                
+                <h2>PROJECTS</h2>
+                <div class="project-categories">
+                    <button class="category-btn active" data-category="web-development">WEB DEV</button>
+                    <button class="category-btn" data-category="seo">SEO</button>
+                    <button class="category-btn" data-category="graphic-design">DESIGNS</button>
+                </div>
+
+                <!-- Web Development Projects Section -->
+                <style>
+                    .project-image {
+                        width: 100%;
+                        height: 100vh;
+                        display: flex;
+                        justify-content: center;
+                        align-items: center;
+                        padding: 20px;
+                    }
+
+                    .project-image img {
+                        width: 100%;
+                        height: 100%;
+                        object-fit: contain;
+                        max-height: 90vh;
+                        border-radius: 8px;
+                    }
+
+                    .project-card {
+                        width: 100%;
+                        height: 100vh;
+                        display: flex;
+                        justify-content: center;
+                        align-items: center;
+                    }
+                    
+                    @media screen and (max-width: 768px) {
+                        .project-image {
+                            padding: 10px;
+                        }
+                        .project-image img {
+                            max-height: 80vh;
+                        }
+                    }
+                </style>
+                <div id="web-development" class="project-category-section" style="display: block;">
+                    <h3>Web Development Projects</h3>
+                    <div class="projects-slider-container">
+                        <div class="swiper projects-swiper">
+                            <div class="swiper-wrapper">
+                                <div class="swiper-slide">
+                                    <div class="project-card">
+                                        <div class="project-image">
+                                            <img src="website 1.PNG" alt="Project 1">
+                                        </div>
+                                       
+                                    </div>
+                                </div>
+                                <div class="swiper-slide">
+                                    <div class="project-card">
+                                        <div class="project-image">
+                                            <img src="websample.PNG" alt="AI Logo Generator">
+                                        </div>
+                                        
+                                    </div>
+                                </div>
+                                <div class="swiper-slide">
+                                    <div class="project-card">
+                                        <div class="project-image">
+                                            <img src="Wonderland sample.PNG" alt="Project 3">
+                                        </div>
+                                        
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="swiper-pagination"></div>
+                            <div class="swiper-button-prev"></div>
+                            <div class="swiper-button-next"></div>
+                        </div>
+                    </div>
+
+                    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css" />
+                    <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
+                    <script>
+                        document.addEventListener('DOMContentLoaded', function () {
+                            new Swiper('.projects-swiper', {
+                                slidesPerView: 1,
+                                spaceBetween: 0,
+                                loop: true,
+                                effect: 'fade',
+                                fadeEffect: {
+                                    crossFade: true
+                                },
+                                pagination: {
+                                    el: '.swiper-pagination',
+                                    clickable: true,
+                                },
+                                navigation: {
+                                    nextEl: '.swiper-button-next',
+                                    prevEl: '.swiper-button-prev',
+                                },
+                                autoplay: {
+                                    delay: 5000,
+                                    disableOnInteraction: false,
+                                }
+                            });
+                        });
+                    </script>
+                </div>
+                <!-- SEO Projects Section -->
+                <div id="seo" class="project-category-section" style="display: none;">
+                    <h3>SEO Projects</h3>
+                    <div class="projects-grid">
+                        <div class="project-card">
+                            <h4>SEO Audit Tool</h4>
+                            <p>A tool for analyzing and improving website SEO performance.</p>
+                        </div>
+                        <!-- Add more SEO projects as needed -->
+                    </div>
+                </div>
+                </div>
+                <!-- Graphic Design Projects Section -->
+                <div id="graphic-design" class="project-category-section" style="display: none;">
+                    <h3>Graphic Design Projects</h3>
+                    <div class="projects-grid">
+                        <div class="project-card">
+                            <h4>UI Mockups</h4>
+                            <p>High-fidelity UI mockups for web and mobile applications.</p>
+                        </div>
+                        <!-- Add more graphic design projects as needed -->
+                    </div>
+                </div>  
+            </section>
+            <section id="skills">
+                <h2>SKILLS</h2>
+                <div class="skills-container">
+                    <div class="skill">
+                        <h4>HTML5</h4>
+                        <div class="skill-bar">
+                            <div class="skill-level" style="width: 95%;"></div>
+                        </div>
+                        <p class="skill-desc">Semantic, accessible markup and modern HTML features.</p>
+                    </div>
+                    <div class="skill">
+                        <h4>CSS3</h4>
+                        <div class="skill-bar">
+                            <div class="skill-level" style="width: 90%;"></div>
+                        </div>
+                        <p class="skill-desc">Responsive layouts, Flexbox, Grid, and animations.</p>
+                    </div>
+                    <div class="skill">
+                        <h4>JavaScript</h4>
+                        <div class="skill-bar">
+                            <div class="skill-level" style="width: 85%;"></div>
+                        </div>
+                        <p class="skill-desc">Dynamic interfaces, ES6+, and interactive web features.</p>
+                    </div>
+                    <div class="skill">
+                        <h4>React</h4>
+                        <div class="skill-bar">
+                            <div class="skill-level" style="width: 80%;"></div>
+                        </div>
+                        <p class="skill-desc">Component-based UI development and state management.</p>
+                    </div>
+                    <div class="skill">
+                        <h4>Graphic Design</h4>
+                        <div class="skill-bar">
+                            <div class="skill-level" style="width: 75%;"></div>
+                        </div>
+                        <p class="skill-desc">UI/UX design, branding, and visual storytelling.</p>
+                    </div>
+                    <div class="skill">
+                        <h4>SEO Optimization</h4>
+                        <div class="skill-bar">
+                            <div class="skill-level" style="width: 70%;"></div>
+                        </div>
+                        <p class="skill-desc">On-page SEO, keyword research, and performance optimization.</p>
+                    </div>
+                </div>
+            </section>
+            <section id="contact">
+                <h2>CONTACT ME</h2>
+                <!-- Use Formspree for form submissions -->
+               
+                <form class="contact-form" action="https://formspree.io/f/xrbqwbqo" method="POST" autocomplete="on">
+                    <div class="form-group">
+                        <label for="name">Name<span aria-hidden="true">*</span>:</label>
+                        <input type="text" id="name" name="name" required placeholder="Your Name">
+                    </div>
+                    <div class="form-group">
+                        <label for="email">Email<span aria-hidden="true">*</span>:</label>
+                        <input type="email" id="email" name="email" required placeholder="Your Email">
+                    </div>
+                    <div class="form-group">
+                        <label for="message">Message<span aria-hidden="true">*</span>:</label>
+                        <textarea id="message" name="message" rows="5" required placeholder="Type your message here"></textarea>
+                    </div>
+                    <button type="submit" class="submit-btn">Send Message</button>
+                     <div id="form-success-message" style="display:none; color: #27ae60; font-weight: bold; margin-bottom: 16px;">
+                    Thank you! Your message has been sent successfully.
+                </div>
+                <script>
+                document.addEventListener('DOMContentLoaded', function () {
+                    const form = document.querySelector('.contact-form');
+                    const successMsg = document.getElementById('form-success-message');
+                    if (form) {
+                        form.addEventListener('submit', function (e) {
+                            e.preventDefault();
+                            const formData = new FormData(form);
+                            fetch(form.action, {
+                                method: 'POST',
+                                body: formData,
+                                headers: { 'Accept': 'application/json' }
+                            })
+                            .then(response => {
+                                if (response.ok) {
+                                    form.reset();
+                                    successMsg.style.display = 'block';
+                                } else {
+                                    response.json().then(data => {
+                                        alert(data.error || 'There was an error submitting the form.');
+                                    });
+                                }
+                            })
+                            .catch(() => {
+                                alert('There was an error submitting the form.');
+                            });
+                        });
+                    }
+                });
+                </script>
+                </form>
+
+            </section>
+            <section id="reviews" class="customer-reviews" style="padding: 40px 20px; text-align: center;">
+                <h2>CUSTOMER REVIEWS</h2>
+                <div class="reviews-container desktop-reviews" style="max-width: 1200px; margin: 0 auto; display: flex; flex-wrap: wrap; justify-content: center; gap: 20px;">
+                    <!-- Original cards for desktop -->
+                    <div class="review-card" style="background: #f8f9fa00; border-radius: 10px; padding: 20px; box-shadow: 0 2px 10px rgba(0,0,0,0.1); flex: 0 1 300px;">
+                        <div class="reviewer-info" style="display: flex; align-items: center; justify-content: center; margin-bottom: 15px;">
+                            <img src="https://randomuser.me/api/portraits/men/32.jpg" alt="Reviewer 1" class="reviewer-avatar" style="width: 60px; height: 60px; border-radius: 50%; margin-right: 15px;">
+                            <div class="customer-details">
+                                <span class="reviewer-name" style="font-weight: bold; display: block;">Folajimi Adelaja</span>
+                                <p style="margin: 5px 0;">CEO, Kollem Designs</p>
+                            </div>
+                        </div>
+                        <div class="review-rating" style="margin: 15px 0;">
+                            <i class="fa-solid fa-star" style="color:#FFD700;"></i>
+                            <i class="fa-solid fa-star" style="color:#FFD700;"></i>
+                            <i class="fa-solid fa-star" style="color:#FFD700;"></i>
+                            <i class="fa-solid fa-star" style="color:#FFD700;"></i>
+                            <i class="fa-solid fa-star-half-stroke" style="color:#FFD700;"></i>
+                        </div>
+                        <p class="review-text" style="font-style: italic; line-height: 1.6;">
+                            "Joseph delivered a fantastic website for my business. The design is modern and responsive. Highly recommended!"
+                        </p>
+                    </div>
+
+                    <div class="review-card" style="background: #f8f9fa00; border-radius: 10px; padding: 20px; box-shadow: 0 2px 10px rgba(0,0,0,0.1); flex: 0 1 300px;">
+                        <div class="reviewer-info" style="display: flex; align-items: center; justify-content: center; margin-bottom: 15px;">
+                            <img src="https://randomuser.me/api/portraits/women/44.jpg" alt="Reviewer 2" class="reviewer-avatar" style="width: 60px; height: 60px; border-radius: 50%; margin-right: 15px;">
+                            <div class="customer-details">
+                                <span class="reviewer-name" style="font-weight: bold; display: block;">Faith Olutope</span>
+                                <p style="margin: 5px 0;">CEO, Zee Styles</p>
+                            </div>
+                        </div>
+                        <div class="review-rating" style="margin: 15px 0;">
+                            <i class="fa-solid fa-star" style="color:#FFD700;"></i>
+                            <i class="fa-solid fa-star" style="color:#FFD700;"></i>
+                            <i class="fa-solid fa-star" style="color:#FFD700;"></i>
+                            <i class="fa-solid fa-star" style="color:#FFD700;"></i>
+                            <i class="fa-solid fa-star" style="color:#FFD700;"></i>
+                        </div>
+                        <p class="review-text" style="font-style: italic; line-height: 1.6;">
+                            "Great communication and attention to detail. My site loads fast and looks amazing on all devices!"
+                        </p>
+                    </div>
+
+                    <div class="review-card" style="background: #f8f9fa00; border-radius: 10px; padding: 20px; box-shadow: 0 2px 10px rgba(0,0,0,0.1); flex: 0 1 300px;">
+                        <div class="reviewer-info" style="display: flex; align-items: center; justify-content: center; margin-bottom: 15px;">
+                            <img src="https://randomuser.me/api/portraits/men/65.jpg" alt="Reviewer 3" class="reviewer-avatar" style="width: 60px; height: 60px; border-radius: 50%; margin-right: 15px;">
+                            <div class="customer-details">
+                                <span class="reviewer-name" style="font-weight: bold; display: block;">Xing Lee</span>
+                                <p style="margin: 5px 0;">CEO, Lighthouse Annotations</p>
+                            </div>
+                        </div>
+                        <div class="review-rating" style="margin: 15px 0;">
+                            <i class="fa-solid fa-star" style="color:#FFD700;"></i>
+                            <i class="fa-solid fa-star" style="color:#FFD700;"></i>
+                            <i class="fa-solid fa-star" style="color:#FFD700;"></i>
+                            <i class="fa-solid fa-star" style="color:#FFD700;"></i>
+                            <i class="fa-regular fa-star" style="color:#FFD700;"></i>
+                        </div>
+                        <p class="review-text" style="font-style: italic; line-height: 1.6;">
+                            "Joseph's SEO improvements boosted my site's ranking. Very professional and knowledgeable!"
+                        </p>
+                    </div>
+                </div>
+
+                <!-- Mobile/Tablet Swiper -->
+                <div class="swiper reviews-swiper" style="display: none; max-width: 100%; padding: 20px;">
+                    <div class="swiper-wrapper">
+                        <!-- Swiper Slides -->
+                        <div class="swiper-slide">
+                            <div class="review-card" style="background: #f8f9fa00; border-radius: 10px; padding: 20px; box-shadow: 0 2px 10px rgba(0,0,0,0.1);">
+                                <!-- First review content -->
+                                <div class="reviewer-info" style="display: flex; align-items: center; justify-content: center; margin-bottom: 15px;">
+                                    <img src="https://randomuser.me/api/portraits/men/32.jpg" alt="Reviewer 1" style="width: 60px; height: 60px; border-radius: 50%; margin-right: 15px;">
+                                    <div class="customer-details">
+                                        <span style="font-weight: bold; display: block;">Folajimi Adelaja</span>
+                                        <p style="margin: 5px 0;">CEO, Kollem Designs</p>
+                                    </div>
+                                </div>
+                                <div class="review-rating" style="margin: 15px 0;">
+                                    <i class="fa-solid fa-star" style="color:#FFD700;"></i>
+                                    <i class="fa-solid fa-star" style="color:#FFD700;"></i>
+                                    <i class="fa-solid fa-star" style="color:#FFD700;"></i>
+                                    <i class="fa-solid fa-star" style="color:#FFD700;"></i>
+                                    <i class="fa-solid fa-star-half-stroke" style="color:#FFD700;"></i>
+                                </div>
+                                <p style="font-style: italic; line-height: 1.6;">
+                                    "Joseph delivered a fantastic website for my business. The design is modern and responsive. Highly recommended!"
+                                </p>
+                            </div>
+                        </div>
+                        <!-- Repeat for other reviews -->
+                        <div class="swiper-slide">
+                            <div class="review-card" style="background: #f8f9fa00; border-radius: 10px; padding: 20px; box-shadow: 0 2px 10px rgba(0,0,0,0.1);">
+                                <!-- Second review content -->
+                                <div class="reviewer-info" style="display: flex; align-items: center; justify-content: center; margin-bottom: 15px;">
+                                    <img src="https://randomuser.me/api/portraits/women/44.jpg" alt="Reviewer 2" style="width: 60px; height: 60px; border-radius: 50%; margin-right: 15px;">
+                                    <div class="customer-details">
+                                        <span style="font-weight: bold; display: block;">Faith Olutope</span>
+                                        <p style="margin: 5px 0;">CEO, Zee Styles</p>
+                                    </div>
+                                </div>
+                                <div class="review-rating" style="margin: 15px 0;">
+                                    <i class="fa-solid fa-star" style="color:#FFD700;"></i>
+                                    <i class="fa-solid fa-star" style="color:#FFD700;"></i>
+                                    <i class="fa-solid fa-star" style="color:#FFD700;"></i>
+                                    <i class="fa-solid fa-star" style="color:#FFD700;"></i>
+                                    <i class="fa-solid fa-star" style="color:#FFD700;"></i>
+                                </div>
+                                <p style="font-style: italic; line-height: 1.6;">
+                                    "Great communication and attention to detail. My site loads fast and looks amazing on all devices!"
+                                </p>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="review-card" style="background: #f8f9fa00; border-radius: 10px; padding: 20px; box-shadow: 0 2px 10px rgba(0,0,0,0.1);">
+                                <!-- Third review content -->
+                                <div class="reviewer-info" style="display: flex; align-items: center; justify-content: center; margin-bottom: 15px;">
+                                    <img src="https://randomuser.me/api/portraits/men/65.jpg" alt="Reviewer 3" style="width: 60px; height: 60px; border-radius: 50%; margin-right: 15px;">
+                                    <div class="customer-details">
+                                        <span style="font-weight: bold; display: block;">Xing Lee</span>
+                                        <p style="margin: 5px 0;">CEO, Lighthouse Annotations</p>
+                                    </div>
+                                </div>
+                                <div class="review-rating" style="margin: 15px 0;">
+                                    <i class="fa-solid fa-star" style="color:#FFD700;"></i>
+                                    <i class="fa-solid fa-star" style="color:#FFD700;"></i>
+                                    <i class="fa-solid fa-star" style="color:#FFD700;"></i>
+                                    <i class="fa-solid fa-star" style="color:#FFD700;"></i>
+                                    <i class="fa-regular fa-star" style="color:#FFD700;"></i>
+                                </div>
+                                <p style="font-style: italic; line-height: 1.6;">
+                                    "Joseph's SEO improvements boosted my site's ranking. Very professional and knowledgeable!"
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-pagination"></div>
+                </div>
+
+                <style>
+                    @media (max-width: 768px) {
+                        .desktop-reviews {
+                            display: none !important;
+                        }
+                        .reviews-swiper {
+                            display: block !important;
+                        }
+                    }
+                </style>
+
+                <script>
+                    document.addEventListener('DOMContentLoaded', function() {
+                        const reviewsSwiper = new Swiper('.reviews-swiper', {
+                            slidesPerView: 1,
+                            spaceBetween: 30,
+                            loop: true,
+                            autoplay: {
+                                delay: 3000,
+                                disableOnInteraction: false,
+                            },
+                            pagination: {
+                                el: '.swiper-pagination',
+                                clickable: true,
+                            },
+                            breakpoints: {
+                                640: {
+                                    slidesPerView: 2,
+                                    spaceBetween: 20,
+                                }
+                            }
+                        });
+                    });
+                </script>
+            </section>
+        </main>
+        <!-- Footer section -->
+        <footer class="site-footer">
+            <div class="footer-content">
+                <div class="footer-logo">
+                    <img src="android-chrome-512x512.png" alt="logo" width="40" height="40">
+                    <span>WEBWISE</span>
+                </div>
+                <div class="footer-social">
+                    <a href="mailto:adelajajoseph04@gmail.com" aria-label="Email">
+                        <i class="fa-solid fa-envelope"></i>
+                    </a>
+                    <a href="https://www.linkedin.com/in/adelaja-joseph-600787254?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app" target="_blank" rel="noopener" aria-label="LinkedIn">
+                        <i class="fa-brands fa-linkedin"></i>
+                    </a>
+                    <a href="https://github.com/adejoey" target="_blank" rel="noopener" aria-label="GitHub">
+                        <i class="fa-brands fa-github"></i>
+                    </a>
+                    <a href="https://www.instagram.com/jimilee300?utm_source=qr&igsh=MTNvZW04M2wza3Vjdw==" target="_blank" rel="noopener" aria-label="Instagram">
+                        <i class="fa-brands fa-instagram"></i>
+                    </a>
+                    <a href="https://x.com/KingJoey_Ade?t=uQ8mhg2DDXe_wFJNY69Uhw&s=09" target="_blank" rel="noopener" aria-label="Twitter">
+                        <i class="fa-brands fa-twitter"></i>
+                    </a>
+                    
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2024 Joseph | Webwise.github.io All rights reserved.</p>
+            </div>
+        </footer>
+        <script src="script.js"></script>
+    </body>
+    </html>
