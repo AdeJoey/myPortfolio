@@ -134,37 +134,138 @@
     </section>
 
     <section id="projects">
-        <h2>PROJECTS</h2>
-        <div class="project-categories">
-            <button class="category-btn active" data-category="web-development">SYSTEMS</button>
-            <button class="category-btn" data-category="seo">OPTIMIZATION</button>
-            <button class="category-btn" data-category="graphic-design">DESIGN</button>
-        </div>
-
-        <div id="web-development" class="project-category-section" style="display: block;">
-            <h3>System Development Projects</h3>
-        </div>
-
-        <div id="seo" class="project-category-section" style="display: none;">
-            <h3>Optimization Projects</h3>
-            <div class="projects-grid">
-                <div class="project-card">
-                    <h4>Business Performance Audit</h4>
-                    <p>Reviewing and improving digital processes for stronger efficiency.</p>
+                
+                <h2>PROJECTS</h2>
+                <div class="project-categories">
+                    <button class="category-btn active" data-category="web-development">WEB DEV</button>
+                    <button class="category-btn" data-category="seo">SEO</button>
+                    <button class="category-btn" data-category="graphic-design">DESIGNS</button>
                 </div>
-            </div>
-        </div>
 
-        <div id="graphic-design" class="project-category-section" style="display: none;">
-            <h3>Design & Interfaces</h3>
-            <div class="projects-grid">
-                <div class="project-card">
-                    <h4>Product UI Mockups</h4>
-                    <p>Clean, functional interfaces designed for usability and clarity.</p>
+                <!-- Web Development Projects Section -->
+                <style>
+                    .project-image {
+                        width: 100%;
+                        height: 100vh;
+                        display: flex;
+                        justify-content: center;
+                        align-items: center;
+                        padding: 20px;
+                    }
+
+                    .project-image img {
+                        width: 100%;
+                        height: 100%;
+                        object-fit: contain;
+                        max-height: 90vh;
+                        border-radius: 8px;
+                    }
+
+                    .project-card {
+                        width: 100%;
+                        height: 100vh;
+                        display: flex;
+                        justify-content: center;
+                        align-items: center;
+                    }
+                    
+                    @media screen and (max-width: 768px) {
+                        .project-image {
+                            padding: 10px;
+                        }
+                        .project-image img {
+                            max-height: 80vh;
+                        }
+                    }
+                </style>
+                <div id="web-development" class="project-category-section" style="display: block;">
+                    <h3>Web Development Projects</h3>
+                    <div class="projects-slider-container">
+                        <div class="swiper projects-swiper">
+                            <div class="swiper-wrapper">
+                                <div class="swiper-slide">
+                                    <div class="project-card">
+                                        <div class="project-image">
+                                            <img src="website 1.PNG" alt="Project 1">
+                                        </div>
+                                        <a href="https://adejoey.github.io" target="_blank" style="position:absolute;top:0;left:0;width:100%;height:100%;z-index:2;text-indent:-9999px;overflow:hidden;">Visit Project</a>
+                                    </div>
+                                </div>
+                                <div class="swiper-slide">
+                                    <div class="project-card">
+                                        <div class="project-image">
+                                            <img src="websample.PNG" alt="AI Logo Generator">
+                                        </div>
+                                        <a href="https://www.design.com" target="_blank" style="position:absolute;top:0;left:0;width:100%;height:100%;z-index:2;text-indent:-9999px;overflow:hidden;">Visit Project</a> 
+                                    </div>
+                                </div>
+                                <div class="swiper-slide">
+                                    <div class="project-card">
+                                        <div class="project-image">
+                                            <img src="Wonderland sample.PNG" alt="Project 3">
+                                        </div>
+                                        <a href="https://sparkly-manatee-6f13af.netlify.app/" target="_blank" style="position:absolute;top:0;left:0;width:100%;height:100%;z-index:2;text-indent:-9999px;overflow:hidden;">Visit Project</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="swiper-pagination"></div>
+                            <div class="swiper-button-prev"></div>
+                            <div class="swiper-button-next"></div>
+                        </div>
+                    </div>
+
+                    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css" />
+                    <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
+                    <script>
+                        document.addEventListener('DOMContentLoaded', function () {
+                            new Swiper('.projects-swiper', {
+                                slidesPerView: 1,
+                                spaceBetween: 0,
+                                loop: true,
+                                effect: 'fade',
+                                fadeEffect: {
+                                    crossFade: true
+                                },
+                                pagination: {
+                                    el: '.swiper-pagination',
+                                    clickable: true,
+                                },
+                                navigation: {
+                                    nextEl: '.swiper-button-next',
+                                    prevEl: '.swiper-button-prev',
+                                },
+                                autoplay: {
+                                    delay: 5000,
+                                    disableOnInteraction: false,
+                                }
+                            });
+                        });
+                    </script>
                 </div>
-            </div>
-        </div>
-    </section>
+                <!-- SEO Projects Section -->
+                <div id="seo" class="project-category-section" style="display: none;">
+                    <h3>SEO Projects</h3>
+                    <div class="projects-grid">
+                        <div class="project-card">
+                            <h4>SEO Audit Tool</h4>
+                            <p>A tool for analyzing and improving website SEO performance.</p>
+                        </div>
+                        <!-- Add more SEO projects as needed -->
+                    </div>
+                </div>
+                </div>
+                <!-- Graphic Design Projects Section -->
+                <div id="graphic-design" class="project-category-section" style="display: none;">
+                    <h3>Graphic Design Projects</h3>
+                    <div class="projects-grid">
+                        <div class="project-card">
+                            <h4>UI Mockups</h4>
+                            <p>High-fidelity UI mockups for web and mobile applications.</p>
+                        </div>
+                        <!-- Add more graphic design projects as needed -->
+                    </div>
+                </div>  
+            </section>
 
     <section id="skills">
         <h2>SKILLS</h2>
